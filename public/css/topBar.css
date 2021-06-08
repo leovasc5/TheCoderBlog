@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.topBar{
+  background-color: #f0f0f0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 8px 24px #000;
+  height: 64px;
+  align-items: center;
+  display: flex;
+  top:0;
+}
+
+.topBar .active{
+    color: #808080
+}
+
+.lista{
+    
+}
