@@ -14,23 +14,24 @@
         <title>@yield('title')</title>
     </head>
 
-    <header>
-        @yield('topBar')
-        <div class="topBar">
-            <div class="esquerda" title="TheCoderBlog">
-                <img src='/img/icons/icon3.svg' width='60px'/>
+    <body class="mode">
+        <header>
+            @yield('topBar')
+            <div class="topBar">
+                <div class="esquerda" title="TheCoderBlog">
+                    <img src='/img/icons/icon3.svg' width='60px'/>
+                </div>
+                <div class="direita">
+                    {{-- <img src="/img/icons/dark-theme.svg" id="dark"/> --}}
+                    <button onclick="setModo(this.textContent)">Dark</button>
+                    <a href="http://127.0.0.1:8000/">Home</a>
+                    <a href="http://127.0.0.1:8000/artigos">Artigos</a>
+                    <a href="http://127.0.0.1:8000/videos">Vídeos</a>
+                    <a href="http://127.0.0.1:8000/projetos">Projetos</a>
+                </div>
+                </div>
             </div>
-            <div class="direita">
-                <img src="/img/icons/dark-theme.svg" id="dark"/>
-                <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="http://127.0.0.1:8000/artigos">Artigos</a>
-                <a href="http://127.0.0.1:8000/videos">Vídeos</a>
-                <a href="http://127.0.0.1:8000/projetos">Projetos</a>
-            </div>
-            </div>
-        </div>
-    </header>
-    <body>
+        </header>
         @yield('content')
 
         @yield('footer')
@@ -49,6 +50,6 @@
             </footer>
         </div>
     
-        <script src="/js/topBar.js"></script>
+        <script src="/js/mode.js"></script>
     </body>
 </html>

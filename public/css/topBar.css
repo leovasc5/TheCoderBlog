@@ -16,6 +16,11 @@ html, body {
   font-weight: 500;
 }
 
+.Dark .topBar{
+    background-color: #808080;
+
+}
+
 .esquerda{
     align-items: center;
     text-align: center;
@@ -24,10 +29,6 @@ html, body {
 .direita{
     margin-left: auto; 
     margin-right: 0;
-}
-
-#dark{
-    width: 20px;
 }
 
 .direita a{
@@ -40,7 +41,6 @@ html, body {
     color: #808080;
 
 }
-
 
 footer{
     font-family: 'cursive';

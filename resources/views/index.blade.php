@@ -6,7 +6,7 @@
 @section('content')
 <link rel="stylesheet" href="/css/index.css">
 
-<p class="intro">Olá, eu sou Leonardo Vasconcelos, um desenvolvedor de software.</p>
+<p class="intro">Olá, eu sou Leonardo Vasconcelos, um desenvolvedor de softwares.</p>
 <section class="perfil">   
     <img src="https://avatars.githubusercontent.com/u/70069239?v=4" class="avatar"/>
     <p>
