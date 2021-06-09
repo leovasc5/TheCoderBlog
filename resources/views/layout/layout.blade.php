@@ -11,7 +11,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/img/icons/icon2.svg">
-        <title>TheCoderBlog</title>
+        <title>@yield('title')</title>
     </head>
 
     <header>
@@ -23,9 +23,9 @@
             <div class="direita">
                 <img src="/img/icons/dark-theme.svg" id="dark"/>
                 <a href="http://127.0.0.1:8000/">Home</a>
-                <a href="http://127.0.0.1:8000/criar-partida">Artigos</a>
-                <a href="http://127.0.0.1:8000/criar-partida">Vídeos</a>
-                <a href="http://127.0.0.1:8000/criar-partida">Projetos</a>
+                <a href="http://127.0.0.1:8000/artigos">Artigos</a>
+                <a href="http://127.0.0.1:8000/videos">Vídeos</a>
+                <a href="http://127.0.0.1:8000/projetos">Projetos</a>
             </div>
             </div>
         </div>

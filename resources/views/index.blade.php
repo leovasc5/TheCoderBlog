@@ -20,7 +20,7 @@
     </p>
 </section>
 
-<section class="posts"     background-color="#f4f4f4">
+<section class="posts">
 
 <h1 class="recentes">Posts Recentes</h1>
 {{-- <h1>Teste</h1>
