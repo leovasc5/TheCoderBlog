@@ -22,12 +22,12 @@
 
 <section class="posts"     background-color="#f4f4f4">
 
+<h1 class="recentes">Posts Recentes</h1>
+{{-- <h1>Teste</h1>
 <h1>Teste</h1>
 <h1>Teste</h1>
 <h1>Teste</h1>
-<h1>Teste</h1>
-<h1>Teste</h1>
-<h1>Teste</h1>
+<h1>Teste</h1> --}}
 </section>
 
 @endsection
