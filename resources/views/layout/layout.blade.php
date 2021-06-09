@@ -9,12 +9,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/img/icons/icon2.svg">
         <title>@yield('title')</title>
     </head>
 
-    <body class="mode">
+    <body class="mode" onload="setBtn()">
         <header>
             @yield('topBar')
             <div class="topBar">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="direita">
                     {{-- <img src="/img/icons/dark-theme.svg" id="dark"/> --}}
-                    <button onclick="setModo(this.textContent)">Dark</button>
+                    <button id="btn" onclick="setModo(this.textContent)">Dark</button>
                     <a href="http://127.0.0.1:8000/">Home</a>
                     <a href="http://127.0.0.1:8000/artigos">Artigos</a>
                     <a href="http://127.0.0.1:8000/videos">Vídeos</a>

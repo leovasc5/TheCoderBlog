@@ -3,7 +3,7 @@
     max-width: 220px;
     border-radius: 360px;
     padding: 0.2rem;
-    border: 2px solid #000;
+    border: 2px solid #0c1117;
 }
 
 .Dark .avatar{
@@ -19,7 +19,7 @@
 }
 
 .Dark .perfil{
-    background-color: #171a21;
+    background-color: #0c1117;
 }
 
 .intro{
@@ -32,13 +32,18 @@
 }
 
 .Dark .intro{
-    background-color: #171a21;
+    background-color: #0c1117;
     color: #f4f4f4;
 }
 
 
 .posts{
     background-color: #d0d4d4;
+}
+
+.Dark .posts{
+    background-color: #3700b3;
+    color: #f4f4f4;
 }
 
 .recentes{

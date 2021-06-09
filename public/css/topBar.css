@@ -1,12 +1,12 @@
 .Dark {
-    background-color: #171a21;
+    background-color: #0c1117;
     /* !important; */
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Baloo Tammudu 2', cursive;
+    font-family: 'Heebo', 'sans-serif';
     background-color: #f4f4f4;
 }
 
@@ -39,7 +39,7 @@ html, body {
 .direita a{
     text-decoration: none;
     padding: 20px;
-    color: #000;
+    color: #0c1117;
 }
 
 .Dark .direita a{
@@ -51,6 +51,14 @@ html, body {
 .direita a:hover{
     color: #808080;
 
+}
+
+button{
+    color: #0c1117;
+}
+
+button:hover{
+    color: #808080;
 }
 
 footer{
