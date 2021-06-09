@@ -16,8 +16,13 @@ html, body {
 }
 
 .topBar img{
-    margin-left: 20px;
+    margin-left: 40px;
     padding: 0;
+}
+
+#logo{
+    margin-left: -70px;
+    text-decoration: none;
 }
 
 .topBar .lista a{
@@ -38,9 +43,8 @@ html, body {
     color: #808080;
 }
 
-.topBar .lista{
-    margin-right: 100px;
-    float: right;
+#first{
+    margin-left: 800px;
 }
 
 footer{

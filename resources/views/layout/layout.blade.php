@@ -19,11 +19,10 @@
         <div class="topBar" style="margin:0" title="TheCoderBlog">
             <a href="http://127.0.0.1:8000" class="active">
                 <img src='/img/icons/icon3.svg' width='45px'/>
-                <br>
-                <label>TheCoderBlog</label>
+                <label id="logo">TheCoderBlog</label>
             </a>
             <div class="lista">
-                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="http://127.0.0.1:8000/" id="first">Home</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Artigos</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Discussão</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Vídeos</a>
