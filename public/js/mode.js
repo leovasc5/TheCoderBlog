@@ -1,5 +1,4 @@
 var modo = document.querySelector(".mode");
-alert(modo);
 
 function setModo(value){
     localStorage.setItem("modo", value);

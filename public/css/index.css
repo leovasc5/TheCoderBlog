@@ -6,12 +6,20 @@
     border: 2px solid #000;
 }
 
+.Dark .avatar{
+    border: 2px solid #f4f4f4;
+}
+
 .perfil{
     float: right;
     align-items: center;
     text-align: center;
-    padding: 0px 120px 0px 0px;
+    padding: 15px 120px 0px 0px;
     top: 0;
+}
+
+.Dark .perfil{
+    background-color: #171a21;
 }
 
 .intro{
@@ -22,6 +30,12 @@
     font-weight: 600;
     margin-bottom: 145px;
 }
+
+.Dark .intro{
+    background-color: #171a21;
+    color: #f4f4f4;
+}
+
 
 .posts{
     background-color: #d0d4d4;

@@ -1,3 +1,8 @@
+.Dark {
+    background-color: #171a21;
+    /* !important; */
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -17,8 +22,8 @@ html, body {
 }
 
 .Dark .topBar{
-    background-color: #808080;
-
+    background-color: #0c1117;
+    color: #f4f4f4;
 }
 
 .esquerda{
@@ -35,6 +40,12 @@ html, body {
     text-decoration: none;
     padding: 20px;
     color: #000;
+}
+
+.Dark .direita a{
+    text-decoration: none;
+    padding: 20px;
+    color: #f4f4f4;
 }
 
 .direita a:hover{
