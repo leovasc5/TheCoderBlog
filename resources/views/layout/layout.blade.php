@@ -19,8 +19,6 @@
         <div class="topBar">
             <div class="esquerda" title="TheCoderBlog">
                 <img src='/img/icons/icon3.svg' width='60px'/>
-                <br>
-                <label>TheCoderBlog</label>
             </div>
             <div class="direita">
                 <img src="/img/icons/dark-theme.svg" id="dark"/>
@@ -33,8 +31,6 @@
         </div>
     </header>
     <body>
-        
-
         @yield('content')
 
         @yield('footer')
