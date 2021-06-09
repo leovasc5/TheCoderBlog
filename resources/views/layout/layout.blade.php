@@ -16,17 +16,19 @@
 
     <header>
         @yield('topBar')
-        <div class="topBar" style="margin:0" title="TheCoderBlog">
-            <a href="http://127.0.0.1:8000" class="active">
-                <img src='/img/icons/icon3.svg' width='45px'/>
-                <label id="logo">TheCoderBlog</label>
-            </a>
-            <div class="lista">
-                <a href="http://127.0.0.1:8000/" id="first">Home</a>
+        <div class="topBar">
+            <div class="esquerda" title="TheCoderBlog">
+                <img src='/img/icons/icon3.svg' width='60px'/>
+                <br>
+                <label>TheCoderBlog</label>
+            </div>
+            <div class="direita">
+                <img src="/img/icons/dark-theme.svg" id="dark"/>
+                <a href="http://127.0.0.1:8000/">Home</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Artigos</a>
-                <a href="http://127.0.0.1:8000/criar-partida">Discussão</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Vídeos</a>
                 <a href="http://127.0.0.1:8000/criar-partida">Projetos</a>
+            </div>
             </div>
         </div>
     </header>
