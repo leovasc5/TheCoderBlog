@@ -13,3 +13,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/criar-artigo', [BlogController::class, 'criarArtigo'])->middleware('auth');
+Route::get('/add-video', [BlogController::class, 'addVideo'])->middleware('auth');
+Route::get('/add-projeto', [BlogController::class, 'addProjeto'])->middleware('auth');

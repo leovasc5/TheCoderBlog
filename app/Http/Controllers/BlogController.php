@@ -35,4 +35,16 @@ class BlogController extends Controller
 
         ]);
     }
+
+    public function addVideo(){
+        return view('add-video', [
+
+        ]);
+    }
+
+    public function addProjeto(){
+        return view('add-projeto', [
+
+        ]);
+    }
 }
