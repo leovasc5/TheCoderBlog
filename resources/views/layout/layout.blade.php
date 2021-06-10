@@ -22,7 +22,6 @@
                     <img src='/img/icons/icon3.svg' width='60px'/>
                 </div>
                 <div class="direita">
-                    {{-- <img src="/img/icons/dark-theme.svg" id="dark"/> --}}
                     <button id="btn" onclick="setModo(this.textContent)">Dark</button>
                     <a href="http://127.0.0.1:8000/">Home</a>
                     <a href="http://127.0.0.1:8000/artigos">Artigos</a>
