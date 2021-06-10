@@ -29,4 +29,10 @@ class BlogController extends Controller
             
         ]);
     }
+
+    public function criarArtigo(){
+        return view('criar-artigo', [
+
+        ]);
+    }
 }

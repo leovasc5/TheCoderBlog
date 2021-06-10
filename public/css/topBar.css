@@ -31,15 +31,16 @@ html, body {
     text-align: center;
 }
 
-.direita{
+.direita, form{
     margin-left: auto; 
     margin-right: 0;
 }
 
-.direita a{
+.direita a, form{
     text-decoration: none;
     padding: 20px;
     color: #0c1117;
+    display: inline-block;
 }
 
 .Dark .direita a{

@@ -28,7 +28,6 @@
                     <a href="http://127.0.0.1:8000/videos">Vídeos</a>
                     <a href="http://127.0.0.1:8000/projetos">Projetos</a>
                 </div>
-                </div>
             </div>
         </header>
         @yield('content')
