@@ -3,11 +3,13 @@
 
 @section('content')
 <link rel="stylesheet" href="/css/buttonReset.css">
-<form action="valida-video" method="post">
+<link rel="stylesheet" href="/css/addVideo.css">
+
+<form action="valida-video" method="post" id="form" class="form">
     @csrf
-    <input type="text" name="titulo"/><br>
-    <input type="text" name="url"/><br>
-    <textarea name="descricao" cols="30" rows="10"></textarea><br>
+    <input type="text" name="titulo" placeholder="Título" required/><br>
+    <input type="text" name="url" placeholder="URL do YouTube" required/><br>
+    <textarea name="descricao" cols="30" rows="10" placeholder="Descrição" required></textarea><br>
     <input type="submit" value="Adicionar">
 </form>
 

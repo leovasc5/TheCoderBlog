@@ -1,0 +1,14 @@
+#form{
+    background-color: #dfd3d3;
+    box-shadow: 14px 14px 14px  #000;
+    display: table;
+    margin: 0 auto;    
+    width: 50%;
+    padding-top: 24px;
+    margin-bottom: 64px;
+}
+.form input, textarea{
+    width: 75%;
+    display: table;
+    margin: 0 auto; 
+}
