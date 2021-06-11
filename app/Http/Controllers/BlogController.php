@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\thecoderblog;
 
 class BlogController extends Controller
 {
@@ -46,5 +47,13 @@ class BlogController extends Controller
         return view('add-projeto', [
 
         ]);
+    }
+
+    public function validaArtigo(Request $request){
+        $artigo = new thecoderblog;
+        $artigo->conteudo = $request->txtConteudo;
+
+        $artigo->save();
+        return redirect('/')->with('msg');
     }
 }

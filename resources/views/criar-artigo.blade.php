@@ -5,7 +5,8 @@
 <link rel="stylesheet" href="/css/buttonReset.css">
 
 <center>
-<form action="ler.php" method="post">
+<form action="/valida-artigo" method="post">
+    @csrf
     <textarea name="txtConteudo" id="txtConteudo"></textarea>
     <input type="submit" value="Enviar"/>
 </form>
