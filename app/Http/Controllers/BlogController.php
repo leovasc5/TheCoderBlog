@@ -56,7 +56,7 @@ class BlogController extends Controller
         $artigo->conteudo = $request->txtConteudo;
 
         $artigo->save();
-        return redirect('/')->with('cont');
+        return redirect('/dashboard')->with('cont');
     }
 
     public function validaVideo(Request $request){
@@ -66,7 +66,7 @@ class BlogController extends Controller
         $video->descricao = $request->descricao;
 
         $video->save();
-        return redirect('/')->with('vid');
+        return redirect('/dashboard')->with('vid');
     }
 
     public function validaProjeto(Request $request){
@@ -74,6 +74,6 @@ class BlogController extends Controller
         $projeto->conteudo = $request->txtConteudo;
 
         $projeto->save();
-        return redirect('/')->with('proj');
+        return redirect('/dashboard')->with('proj');
     }
 }

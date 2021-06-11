@@ -12,3 +12,7 @@
     display: table;
     margin: 0 auto; 
 }
+
+.Dark #form{
+    box-shadow: 14px 14px 14px  #808080;
+}
