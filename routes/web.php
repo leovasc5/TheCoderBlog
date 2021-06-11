@@ -18,3 +18,4 @@ Route::get('/add-projeto', [BlogController::class, 'addProjeto'])->middleware('a
 
 Route::post('/valida-artigo', [BlogController::class, 'validaArtigo'])->middleware('auth');
 Route::post('/valida-video', [BlogController::class, 'validaVideo'])->middleware('auth');
+Route::post('/valida-projeto', [BlogController::class, 'validaProjeto'])->middleware('auth');

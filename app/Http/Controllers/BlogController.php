@@ -67,4 +67,8 @@ class BlogController extends Controller
         $video->save();
         return redirect('/')->with('vid');
     }
+
+    public function validaProjeto(Request $request){
+
+    }
 }
