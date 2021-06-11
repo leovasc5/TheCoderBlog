@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\thecoderblog;
 use App\Models\videos;
+use App\Models\projetos;
 
 class BlogController extends Controller
 {
@@ -69,6 +70,10 @@ class BlogController extends Controller
     }
 
     public function validaProjeto(Request $request){
+        $projeto = new projetos;
+        $projeto->conteudo = $request->txtConteudo;
 
+        $projeto->save();
+        return redirect('/')->with('proj');
     }
 }
