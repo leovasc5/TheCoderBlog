@@ -17,3 +17,4 @@ Route::get('/add-video', [BlogController::class, 'addVideo'])->middleware('auth'
 Route::get('/add-projeto', [BlogController::class, 'addProjeto'])->middleware('auth');
 
 Route::post('/valida-artigo', [BlogController::class, 'validaArtigo'])->middleware('auth');
+Route::post('/valida-video', [BlogController::class, 'validaVideo'])->middleware('auth');
