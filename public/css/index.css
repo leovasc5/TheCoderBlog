@@ -48,5 +48,15 @@
 
 .recentes{
     font-weight: 500;
+    font-size: 36px;
     text-align: center;
+    padding: 40px;
+}
+
+.box{
+    border: 1px solid #274360;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin-left: 150px;
+    margin-right: 150px;
 }

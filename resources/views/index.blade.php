@@ -22,16 +22,15 @@
 </section>
 
 <section class="posts">
-
 <h1 class="recentes">Posts Recentes</h1>
 @php 
-// print_r($artigos);
-
 foreach($artigos as $artigo){
-echo html_entity_decode($artigo->conteudo);
+    echo "<div class='box'>";
+        echo html_entity_decode($artigo->conteudo);
+    echo "</div>";
 }
 @endphp
-
+</div>
 </section>
 
 @endsection
