@@ -24,11 +24,14 @@
 <section class="posts">
 
 <h1 class="recentes">Posts Recentes</h1>
-{{-- <h1>Teste</h1>
-<h1>Teste</h1>
-<h1>Teste</h1>
-<h1>Teste</h1>
-<h1>Teste</h1> --}}
+@php 
+// print_r($artigos);
+
+foreach($artigos as $artigo){
+echo html_entity_decode($artigo->conteudo);
+}
+@endphp
+
 </section>
 
 @endsection
