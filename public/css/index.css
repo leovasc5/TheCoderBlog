@@ -54,9 +54,20 @@
 }
 
 .box{
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
     border: 1px solid #274360;
     overflow: hidden;
     text-overflow: ellipsis; 
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.Dark .box{
+    border: 1px solid #f4f4f4;
+}
+
+.box:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }

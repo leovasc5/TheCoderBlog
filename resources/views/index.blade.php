@@ -32,5 +32,4 @@ foreach($artigos as $artigo){
 @endphp
 </div>
 </section>
-
 @endsection
