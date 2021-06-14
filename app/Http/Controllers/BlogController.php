@@ -10,8 +10,10 @@ use App\Models\projetos;
 class BlogController extends Controller
 {
     public function index(){
+        $artigos = thecoderblog::all();
+
         return view('index', [
-            
+            'artigos' => $artigos
         ]);
     }
 
