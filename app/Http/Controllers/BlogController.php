@@ -18,14 +18,16 @@ class BlogController extends Controller
     }
 
     public function artigos(){
+
         return view('artigos', [
-            
         ]);
     }
 
     public function videos(){
+        $videos = videos::all();
+        
         return view('videos', [
-            
+            'videos' => $videos
         ]);
     }
 
