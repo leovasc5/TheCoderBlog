@@ -24,9 +24,9 @@
 <section class="posts">
 <h1 class="recentes">Posts Recentes</h1>
 @php 
-foreach($artigos as $artigo){
+for($i = 0; $i <=2; $i++){
     echo "<div class='box'>";
-        echo html_entity_decode($artigo->conteudo);
+        echo html_entity_decode($artigos[$i]->conteudo);
     echo "</div>";
 }
 @endphp

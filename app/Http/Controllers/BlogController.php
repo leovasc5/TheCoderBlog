@@ -25,15 +25,17 @@ class BlogController extends Controller
 
     public function videos(){
         $videos = videos::all();
-        
+
         return view('videos', [
             'videos' => $videos
         ]);
     }
 
     public function projetos(){
+        $projetos = projetos::all();
+
         return view('projetos', [
-            
+           'projetos' =>  $projetos 
         ]);
     }
 

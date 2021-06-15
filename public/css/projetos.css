@@ -1,0 +1,38 @@
+*{
+    color: #000;
+}
+
+.Dark *{
+    color: #f4f4f4;
+}
+
+.Light h3{
+    color: #000;
+}
+
+h1{
+    margin: 0 auto;
+}
+
+.Dark h1, h3{
+    color: #f4f4f4;
+}
+
+.box{
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
+    border: 1px solid #274360;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    margin-top: 20px;
+}
+
+.Dark .box{
+    border: 1px solid #f4f4f4;
+}
+
+.box:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}

@@ -1,3 +1,7 @@
+.Light h3{
+    color: #000;
+}
+
 .Dark h1, h3{
     color: #f4f4f4;
 }
