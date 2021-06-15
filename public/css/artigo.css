@@ -5,3 +5,19 @@
 .Dark .box_artigo{
     color: #f4f4f4;
 }
+
+.campoComentarios{
+}
+
+.Dark .campoComentarios{
+    background-color: #282A2D;
+    color: #f4f4f4;
+    padding: 40px;
+}
+
+input[type=text] {
+    width: 240px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
