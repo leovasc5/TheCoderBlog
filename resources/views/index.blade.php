@@ -30,6 +30,7 @@ for($i = 0; $i <=2; $i++){
     echo "</div>";
 }
 @endphp
+<br><br><br>
 </div>
 </section>
 @endsection
