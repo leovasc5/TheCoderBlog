@@ -26,7 +26,9 @@
 @php 
 for($i = 0; $i <=2; $i++){
     echo "<div class='box'>";
-        echo html_entity_decode($artigos[$i]->conteudo);
+        echo "<div class='text'>";
+            echo html_entity_decode($artigos[$i]->conteudo);
+        echo "</div>";
     echo "</div>";
 }
 @endphp

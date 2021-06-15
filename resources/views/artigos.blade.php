@@ -11,7 +11,9 @@
 <h1 class="recentes">Artigos Recentes</h1>
 @foreach($artigos as $artigo)
 <div class='box'>
-    {!! $artigo->conteudo !!}
+    <div class='text'>
+        {!! $artigo->conteudo !!}
+    </div>
 </div>
 @endforeach
 <br><br><br>
