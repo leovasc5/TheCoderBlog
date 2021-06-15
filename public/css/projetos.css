@@ -26,6 +26,7 @@ h1{
     overflow: hidden;
     text-overflow: ellipsis; 
     margin-top: 20px;
+    box-shadow: 14px 14px 14px #000;
 }
 
 .Dark .box{

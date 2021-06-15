@@ -61,6 +61,7 @@
     overflow: hidden;
     text-overflow: ellipsis; 
     margin-top: 20px;
+    box-shadow: 14px 14px 14px #000;
 }
 
 .Dark .box{
@@ -68,8 +69,8 @@
 }
 
 .box:hover{
-    opacity: 0.5;
     cursor: pointer;
+    box-shadow: 24px 24px 24px #000;
 }
 
 .Dark .box:hover{
