@@ -20,4 +20,4 @@ Route::post('/valida-artigo', [BlogController::class, 'validaArtigo'])->middlewa
 Route::post('/valida-video', [BlogController::class, 'validaVideo'])->middleware('auth');
 Route::post('/valida-projeto', [BlogController::class, 'validaProjeto'])->middleware('auth');
 
-Route::delete('/artigo/{id}', [PartidaController::class, 'showArtigo']);
+Route::get('/artigo/{id}', [BlogController::class, 'showArtigo']);
