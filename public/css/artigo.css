@@ -1,0 +1,7 @@
+.box_artigo{
+    padding: 0 100px 100px 100px;
+}
+
+.Dark .box_artigo{
+    color: #f4f4f4;
+}
