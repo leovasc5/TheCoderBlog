@@ -84,4 +84,13 @@ class BlogController extends Controller
         $projeto->save();
         return redirect('/dashboard')->with('proj');
     }
+
+    public function showArtigo($id){
+        $artigo = thecoderblog::findOrFail($id);
+
+        return view('artigo', [
+            'artigo' => $artigo
+        ]);
+    }
+
 }
