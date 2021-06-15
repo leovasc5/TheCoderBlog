@@ -18,8 +18,10 @@ class BlogController extends Controller
     }
 
     public function artigos(){
+        $artigos = thecoderblog::all();
 
         return view('artigos', [
+            'artigos' => $artigos
         ]);
     }
 
