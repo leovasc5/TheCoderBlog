@@ -102,8 +102,13 @@ class BlogController extends Controller
         ]);
     }
 
-    public function storeComentarioArtigo($id){
+    public function storeComentarioArtigo(Request $request, $id){
         $comentario = new comentarios_artigo;
-        $comentario->
+        $comentario->id_post = $id;
+        $comentario->username = $request->username;
+        $comentario->conteudo = $request->conteudo;
+
+        $comentario->save();
+        return redirect("/artigo/$id");
     }
 }

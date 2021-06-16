@@ -15,9 +15,9 @@
     <h2>Comentários</h2>
     <form action="/valida_comentario_artigo/{{$artigo->id}}" method="post">
         @csrf
-        <input type="text" placeholder="Username">
+        <input type="text" name="username" placeholder="Username">
         <br>
-        <textarea placeholder="Digite aqui o seu comentário" cols="80" rows="10"></textarea>
+        <textarea placeholder="Digite aqui o seu comentário" name="conteudo" maxlength="191" cols="80" rows="10"></textarea>
         <br>
         <input type="submit" value="comentar"/>
     </form>
