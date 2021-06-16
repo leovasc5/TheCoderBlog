@@ -7,6 +7,7 @@ use App\Models\thecoderblog;
 use App\Models\videos;
 use App\Models\projetos;
 use App\Models\comentarios_artigo;
+use App\Models\comentarios_projeto;
 use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
@@ -118,6 +119,12 @@ class BlogController extends Controller
     }
 
     public function storeComentarioProjeto(Request $request, $id){
-        $comentario = new comen
+        $comentario = new comentarios_projeto;
+        $comentario->id_post = $id;
+        $comentario->username = $request->username;
+        $comentario->conteudo = $request->conteudo;
+        
+        $comentario->save();
+        return redirect("/projeto/$id");
     }
 }
