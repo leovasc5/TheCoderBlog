@@ -27,6 +27,7 @@
                     <a href="http://127.0.0.1:8000/criar-artigo">Criar Artigo</a>
                     <a href="http://127.0.0.1:8000/add-video">Adicionar Vídeo</a>
                     <a href="http://127.0.0.1:8000/add-projeto">Adicionar Projeto</a>
+                    <a href="http://127.0.0.1:8000/adm-posts">Administrar Posts</a>
                     <form action="/logout" method="POST">
                         @csrf
                         <a href="/logout" onclick="event.preventDefault();

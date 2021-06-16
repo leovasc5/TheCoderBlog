@@ -127,4 +127,10 @@ class BlogController extends Controller
         $comentario->save();
         return redirect("/projeto/$id");
     }
+
+    public function adm(){
+        return view('adm', [
+
+        ]);
+    }
 }
