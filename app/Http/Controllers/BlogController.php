@@ -93,4 +93,11 @@ class BlogController extends Controller
         ]);
     }
 
+    public function showProjeto($id){
+        $projeto = projetos::findOrFail($id);
+
+        return view('projeto', [
+            'projeto' => $projeto
+        ]);
+    }
 }
