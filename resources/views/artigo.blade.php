@@ -13,7 +13,7 @@
 
 <div class="campoComentarios">
     <h2>Comentários</h2>
-    <form action="/valida_comentario_artigo" method="post">
+    <form action="/valida_comentario_artigo/{{$artigo->id}}" method="post">
         @csrf
         <input type="text" placeholder="Username">
         <br>

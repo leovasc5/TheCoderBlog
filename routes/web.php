@@ -22,3 +22,6 @@ Route::post('/valida-projeto', [BlogController::class, 'validaProjeto'])->middle
 
 Route::get('/artigo/{id}', [BlogController::class, 'showArtigo']);
 Route::get('/projeto/{id}', [BlogController::class, 'showProjeto']);
+
+Route::get('/valida_comentario_artigo/{id}', [BlogController::class, 'storeComentarioArtigo']);
+
