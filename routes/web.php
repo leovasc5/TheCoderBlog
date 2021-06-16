@@ -21,3 +21,4 @@ Route::post('/valida-video', [BlogController::class, 'validaVideo'])->middleware
 Route::post('/valida-projeto', [BlogController::class, 'validaProjeto'])->middleware('auth');
 
 Route::get('/artigo/{id}', [BlogController::class, 'showArtigo']);
+// Route::post('//{id}', [PartidaController::class, 'join'])

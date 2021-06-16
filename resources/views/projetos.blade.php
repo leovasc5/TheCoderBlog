@@ -24,4 +24,5 @@ for($i = 0; $i <=2; $i++){
 </div>
 </section>
 
+
 @endsection
