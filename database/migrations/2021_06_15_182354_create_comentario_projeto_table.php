@@ -18,6 +18,7 @@ class CreateComentarioProjetoTable extends Migration
             $table->timestamps();
             $table->string('username');
             $table->string('conteudo');
+            $table->integer('id_post');
         });
     }
 

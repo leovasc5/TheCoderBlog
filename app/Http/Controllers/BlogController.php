@@ -99,9 +99,11 @@ class BlogController extends Controller
 
     public function showProjeto($id){
         $projeto = projetos::findOrFail($id);
+        $comentarios = DB::table("comentario_projeto")->where('id_post', "$id")->latest()->get();
 
         return view('projeto', [
-            'projeto' => $projeto
+            'projeto' => $projeto,
+            'comentarios' => $comentarios
         ]);
     }
 
@@ -113,5 +115,9 @@ class BlogController extends Controller
 
         $comentario->save();
         return redirect("/artigo/$id");
+    }
+
+    public function storeComentarioProjeto(Request $request, $id){
+        $comentario = new comen
     }
 }

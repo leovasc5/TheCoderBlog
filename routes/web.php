@@ -24,4 +24,4 @@ Route::get('/artigo/{id}', [BlogController::class, 'showArtigo']);
 Route::get('/projeto/{id}', [BlogController::class, 'showProjeto']);
 
 Route::post('/valida_comentario_artigo/{id}', [BlogController::class, 'storeComentarioArtigo']);
-
+Route::post('/valida_comentario_projeto/{id}', [BlogController::class, 'storeComentarioProjeto']);
