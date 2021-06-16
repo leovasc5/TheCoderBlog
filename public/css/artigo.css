@@ -21,3 +21,24 @@ input[type=text] {
     margin: 8px 0;
     box-sizing: border-box;
 }
+
+.fr{
+    float: right;
+}
+
+.comment{
+    width: 500px;
+    border-bottom: #808080 1px solid;
+}
+
+.box_submit{
+    color: #000;
+}
+
+.Dark .box_submit{
+    color: #f4f4f4;
+}
+
+.box_submit:hover{
+    opacity: 0.5;
+}
