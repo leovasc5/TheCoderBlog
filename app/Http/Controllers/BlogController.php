@@ -7,6 +7,7 @@ use App\Models\thecoderblog;
 use App\Models\videos;
 use App\Models\projetos;
 use App\Models\comentarios_artigo;
+use Illuminate\Support\Facades\DB;
 
 class BlogController extends Controller
 {
@@ -88,9 +89,11 @@ class BlogController extends Controller
 
     public function showArtigo($id){
         $artigo = thecoderblog::findOrFail($id);
+        $comentarios = DB::table("comentarios_artigos")->where('id_post', "$id")->latest()->get();
 
         return view('artigo', [
-            'artigo' => $artigo
+            'artigo' => $artigo,
+            'comentarios' => $comentarios
         ]);
     }
 
