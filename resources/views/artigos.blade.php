@@ -10,11 +10,13 @@
 <section class="posts">
 <h1 class="recentes">Artigos Recentes</h1>
 @foreach($artigos as $artigo)
-<div class='box'>
-    <div class='text'>
-        {!! $artigo->conteudo !!}
+<a href="/artigo/{{$artigo->id}}">
+    <div class='box'>
+        <div class='text'>
+            {!! $artigo->conteudo !!}
+        </div>
     </div>
-</div>
+</a>
 @endforeach
 <br><br><br>
 </section>
