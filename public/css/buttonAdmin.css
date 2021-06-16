@@ -1,0 +1,20 @@
+.button{
+    border: 1px #000 solid !important;
+    text-align: center !important;
+    padding: 15px !important;
+}
+
+.Dark .button{
+    border: 1px #f4f4f4 solid !important;
+    color: #f4f4f4 !important;
+}
+
+.button:hover{
+    opacity: 0.5;
+}
+
+
+.center{
+    padding: 15px;
+    padding-bottom: 40px;
+}
