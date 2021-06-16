@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\thecoderblog;
 use App\Models\videos;
 use App\Models\projetos;
+use App\Models\comentarios_artigo;
 
 class BlogController extends Controller
 {
@@ -99,5 +100,10 @@ class BlogController extends Controller
         return view('projeto', [
             'projeto' => $projeto
         ]);
+    }
+
+    public function storeComentarioArtigo($id){
+        $comentario = new comentarios_artigo;
+        $comentario->
     }
 }

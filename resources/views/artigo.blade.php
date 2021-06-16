@@ -18,6 +18,8 @@
         <input type="text" placeholder="Username">
         <br>
         <textarea placeholder="Digite aqui o seu comentário" cols="80" rows="10"></textarea>
+        <br>
+        <input type="submit" value="comentar"/>
     </form>
 </div>
 

@@ -16,6 +16,7 @@ class CreateComentariosArtigosTable extends Migration
         Schema::create('comentarios_artigos', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->integer('id_post');
             $table->string('username');
             $table->string('conteudo');
         });
