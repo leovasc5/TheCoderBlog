@@ -24,6 +24,15 @@ input[type=text] {
 
 .fr{
     float: right;
+    color: #800;
+}
+
+.Dark .fr{
+    color: rgb(187, 62, 62);
+}
+
+.fr:hover{
+    opacity: 0.5;
 }
 
 .comment{

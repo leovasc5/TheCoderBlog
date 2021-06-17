@@ -3,6 +3,7 @@
 
 @section('content')
 <link rel="stylesheet" href="/css/buttonReset.css">
+<link rel="stylesheet" href="/css/artigo.css">
 
 <center>
     <form action="/artigo/update/{{ $artigo->id }}" method="post">
@@ -13,8 +14,18 @@
         </textarea>
         <input type="submit" value="Enviar"/>
     </form>
-<center>
+</center>
+
+<div class="campoComentarios">
+@foreach($comentarios as $comentario)
+    <div class="comment">
+        <p><b>{{$comentario->username}}</b></p>
+        <a href="comentario/delete/{{$comentario->id}}" class="fr">Excluir</a>
+        <p>{{$comentario->conteudo}}</p>
+    </div>
+@endforeach
+</div>
+
 <script src="/vendor/ckeditor5/build/ckeditor.js"></script>
 <script src="/js/ckeditor5.js"> </script>
-
 @endsection
