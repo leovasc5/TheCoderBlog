@@ -134,11 +134,21 @@ class BlogController extends Controller
         ]);
     }
 
-    public function editArtigoScreen(){
+    public function editArtigoTable(){
         $artigos = thecoderblog::all();
 
-        return view('editArtigoScreen',[
+        return view('editArtigoTable',[
             'artigos' => $artigos
+        ]);
+    }
+
+    public function editArtigoScreen($id){
+        $artigo = thecoderblog::findOrFail($id);
+        $comentarios = DB::table("comentarios_artigos")->where('id_post', "$id")->latest()->get();
+
+        return view('editArtigoScreen', [
+            'artigo' => $artigo,
+            'comentarios' => $comentarios
         ]);
     }
 }
