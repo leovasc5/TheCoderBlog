@@ -24,9 +24,10 @@ Route::post('/valida-projeto', [BlogController::class, 'validaProjeto'])->middle
 Route::get('/artigo/{id}', [BlogController::class, 'showArtigo']);
 Route::get('/projeto/{id}', [BlogController::class, 'showProjeto']);
 
-Route::post('/valida_comentario_artigo/{id}', [BlogController::class, 'storeComentarioArtigo']);
-Route::post('/valida_comentario_projeto/{id}', [BlogController::class, 'storeComentarioProjeto']);
+Route::post('/valida_comentario_artigo/{id}', [BlogController::class, 'storeComentarioArtigo'])->middleware('auth');
+Route::post('/valida_comentario_projeto/{id}', [BlogController::class, 'storeComentarioProjeto'])->middleware('auth');
 
-Route::get('editar-artigo', [BlogController::class, 'editArtigoTable']);
-Route::get('artigo/editar/{id}', [BlogController::class, 'editArtigoScreen']);
+Route::get('editar-artigo', [BlogController::class, 'editArtigoTable'])->middleware('auth');
+Route::get('artigo/editar/{id}', [BlogController::class, 'editArtigoScreen'])->middleware('auth');
+Route::put('artigo/update/{id}', [BlogController::class, 'editArtigo'])->middleware('auth');
 

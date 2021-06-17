@@ -4,8 +4,17 @@
 @section('content')
 <link rel="stylesheet" href="/css/buttonReset.css">
 
-@php
-    var_dump($comentarios);
-@endphp
+<center>
+    <form action="/artigo/update/{{ $artigo->id }}" method="post">
+        @csrf
+        @method('PUT')
+        <textarea name="txtConteudo" id="txtConteudo">
+            {!! $artigo->conteudo !!}
+        </textarea>
+        <input type="submit" value="Enviar"/>
+    </form>
+<center>
+<script src="/vendor/ckeditor5/build/ckeditor.js"></script>
+<script src="/js/ckeditor5.js"> </script>
 
 @endsection

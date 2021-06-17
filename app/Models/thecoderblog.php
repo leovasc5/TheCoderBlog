@@ -9,4 +9,5 @@ class thecoderblog extends Model
 {
     use HasFactory;
     protected $table = 'artigos';
+    protected $fillable = ['_token'];
 }

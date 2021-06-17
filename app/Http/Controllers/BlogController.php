@@ -151,4 +151,25 @@ class BlogController extends Controller
             'comentarios' => $comentarios
         ]);
     }
+
+    public function editArtigo(Request $request, $id){
+        // $update = new thecoderblog;
+        // $update->id = $request->id;
+        // $update->created_at = $request->created_at;
+        // $update->updated_at = $request->updated_at;
+        // $update->conteudo = $request->conteudo;
+
+        // $comentario = new comentarios_projeto;
+        $update = $request->all();
+        var_dump($request->all());
+        // $update[0] = $id;
+        // $update[1] = $request->created_at;
+        // $update[2] = $request->updated_at;
+        // $update[3] = $request->conteudo;
+
+        thecoderblog::findOrFail($id)->update($update);
+
+        return redirect("/artigo/$id");
+
+    }
 }
