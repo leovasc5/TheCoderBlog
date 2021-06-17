@@ -157,7 +157,7 @@ class BlogController extends Controller
         DB::table('artigos')->where('id', "$id")->update(['updated_at' => "$now"]);
         DB::table('artigos')->where('id', "$id")->update(['conteudo' => "$request->conteudo"]);
 
-        // return redirect("/artigo/$id");
+        return redirect("/artigo/$id");
 
     }
 }

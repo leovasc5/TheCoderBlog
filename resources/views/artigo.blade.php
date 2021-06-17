@@ -9,7 +9,7 @@
 
 <div class="box_artigo">
     <label><b>Autor:</b> Leonardo Vasconcelos Paulino</label>
-    <label class="fr"><b>Data:</b> @php
+    <label class="fr"><b>Publicado:</b> @php
         $array_time = explode(' ', $artigo->created_at);
         $array_dia = explode('-', $array_time[0]);
 
@@ -51,6 +51,51 @@
         }
         echo " de $array_dia[0]";
       @endphp</label>
+      @if($artigo->updated_at != $artigo->created_at)
+        <br>
+        <label class="fr"><b>Atualizado: </b>@php
+          $array_time = explode(' ', $artigo->updated_at);
+          $array_dia = explode('-', $array_time[0]);
+  
+          echo $array_dia[2].' de ';
+          if($array_dia[1] == '01'){
+            echo 'Janeiro';
+          }
+          if($array_dia[1] == '02'){
+            echo 'Fevereiro';
+          }
+          if($array_dia[1] == '03'){
+            echo 'Março';
+          }
+          if($array_dia[1] == '04'){
+            echo 'Abril';
+          }
+          if($array_dia[1] == '05'){
+            echo 'Maio';
+          }
+          if($array_dia[1] == '06'){
+            echo 'Junho';
+          }
+          if($array_dia[1] == '07'){
+            echo 'Julho';
+          }
+          if($array_dia[1] == '08'){
+            echo 'Agosto';
+          }
+          if($array_dia[1] == '09'){
+            echo 'Setembro';
+          }
+          if($array_dia[1] == '10'){
+            echo 'Outubro';
+          }
+          if($array_dia[1] == '11'){
+            echo 'Novembro';
+          }if($array_dia[1] == '12'){
+            echo 'Dezembro';
+          }
+          echo " de $array_dia[0]";
+        @endphp</label>
+      @endif
 {!! $artigo->conteudo !!}
 </div>
 
