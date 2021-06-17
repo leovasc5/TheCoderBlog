@@ -7,14 +7,16 @@
 
 <table id="customers">
     <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
+      <th>Artigo</th>
+      <th>Editar</th>
+      <th>Excluir</th>
     </tr> 
 
     @foreach ($artigos as $artigo)
         <tr>
             <td>{!! $artigo->conteudo !!}</td>
+            <td>Editar</td>
+            <td>Excluir</td>
         </tr>
     @endforeach
     
