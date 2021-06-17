@@ -16,3 +16,7 @@
 .Dark #form{
     box-shadow: 14px 14px 14px  #808080;
 }
+
+.hover:hover{
+    opacity: 0.5;
+}

@@ -33,3 +33,5 @@ Route::put('artigo/update/{id}', [BlogController::class, 'editArtigo'])->middlew
 Route::delete('artigo/editar/comentario/delete/{id_artigo}/{id}', [BlogController::class, 'deleteComentario'])->middleware('auth');
 
 Route::get('editar-video', [BlogController::class, 'editVideoTable'])->middleware('auth');
+Route::get('video/editar/{id}', [BlogController::class, 'editVideoScreen'])->middleware('auth');
+Route::put('video/update/{id}', [BlogController::class, 'editVideo'])->middleware('auth');

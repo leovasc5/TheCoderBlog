@@ -173,4 +173,21 @@ class BlogController extends Controller
         ]);
     }
 
+    public function editVideoScreen($id){
+        $video = videos::findOrFail($id);
+
+        return view('editVideoScreen', [
+            'video' => $video
+        ]);
+    }
+
+    public function editVideo(Request $request, $id){
+        $now = now();
+        DB::table('videos')->where('id', "$id")->update(['updated_at' => "$now"]);
+        DB::table('videos')->where('id', "$id")->update(['titulo' => "$request->titulo"]);
+        DB::table('videos')->where('id', "$id")->update(['url' => "$request->url"]);
+        DB::table('videos')->where('id', "$id")->update(['descricao' => "$request->descricao"]);
+
+        return redirect("/videos");
+    }
 }
