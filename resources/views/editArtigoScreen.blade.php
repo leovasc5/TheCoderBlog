@@ -8,7 +8,7 @@
     <form action="/artigo/update/{{ $artigo->id }}" method="post">
         @csrf
         @method('PUT')
-        <textarea name="txtConteudo" id="txtConteudo">
+        <textarea name="conteudo" id="txtConteudo">
             {!! $artigo->conteudo !!}
         </textarea>
         <input type="submit" value="Enviar"/>
