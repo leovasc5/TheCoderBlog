@@ -165,4 +165,12 @@ class BlogController extends Controller
         return redirect("/artigo/$id_artigo");
     }
 
+    public function editVideoTable(){
+        $videos = videos::all();
+
+        return view('editVideoTable', [
+            'videos' => $videos
+        ]);
+    }
+
 }

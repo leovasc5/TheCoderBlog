@@ -30,5 +30,6 @@ Route::post('/valida_comentario_projeto/{id}', [BlogController::class, 'storeCom
 Route::get('editar-artigo', [BlogController::class, 'editArtigoTable'])->middleware('auth');
 Route::get('artigo/editar/{id}', [BlogController::class, 'editArtigoScreen'])->middleware('auth');
 Route::put('artigo/update/{id}', [BlogController::class, 'editArtigo'])->middleware('auth');
-
 Route::delete('artigo/editar/comentario/delete/{id_artigo}/{id}', [BlogController::class, 'deleteComentario'])->middleware('auth');
+
+Route::get('editar-video', [BlogController::class, 'editVideoTable'])->middleware('auth');
