@@ -133,4 +133,12 @@ class BlogController extends Controller
 
         ]);
     }
+
+    public function editArtigoScreen(){
+        $artigos = thecoderblog::all();
+
+        return view('editArtigoScreen',[
+            'artigos' => $artigos
+        ]);
+    }
 }

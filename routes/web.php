@@ -26,3 +26,5 @@ Route::get('/projeto/{id}', [BlogController::class, 'showProjeto']);
 
 Route::post('/valida_comentario_artigo/{id}', [BlogController::class, 'storeComentarioArtigo']);
 Route::post('/valida_comentario_projeto/{id}', [BlogController::class, 'storeComentarioProjeto']);
+
+Route::get('editar-artigo', [BlogController::class, 'editArtigoScreen']);
