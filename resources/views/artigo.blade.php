@@ -93,7 +93,7 @@
           }if($array_dia[1] == '12'){
             echo 'Dezembro';
           }
-          echo " de $array_dia[0]";
+          echo " de $array_dia[0] às $array_time[1]";
         @endphp</label>
       @endif
 {!! $artigo->conteudo !!}
