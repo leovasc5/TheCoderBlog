@@ -9,7 +9,7 @@
 
 <div class="box_artigo">
     <label><b>Autor:</b> Leonardo Vasconcelos Paulino</label>
-    <label class="fr"><b>Publicado:</b> @php
+    <label class="r"><b>Publicado:</b> @php
         $array_time = explode(' ', $artigo->created_at);
         $array_dia = explode('-', $array_time[0]);
 
@@ -53,7 +53,7 @@
       @endphp</label>
       @if($artigo->updated_at != $artigo->created_at)
         <br>
-        <label class="fr"><b>Atualizado: </b>@php
+        <label class="r"><b>Atualizado: </b>@php
           $array_time = explode(' ', $artigo->updated_at);
           $array_dia = explode('-', $array_time[0]);
   

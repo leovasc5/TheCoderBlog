@@ -20,7 +20,11 @@
 @foreach($comentarios as $comentario)
     <div class="comment">
         <p><b>{{$comentario->username}}</b></p>
-        <a href="comentario/delete/{{$comentario->id}}" class="fr">Excluir</a>
+        <form action="comentario/delete/{{$artigo->id}}/{{$comentario->id}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="fr">Excluir</button>
+          </form>
         <p>{{$comentario->conteudo}}</p>
     </div>
 @endforeach

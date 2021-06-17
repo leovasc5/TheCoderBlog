@@ -159,4 +159,10 @@ class BlogController extends Controller
 
         return redirect("/artigo/$id");
     }
+
+    public function deleteComentario($id_artigo, $id){
+        comentarios_artigo::findOrFail($id)->delete();
+        return redirect("/artigo/$id_artigo");
+    }
+
 }

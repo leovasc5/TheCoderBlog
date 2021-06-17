@@ -35,6 +35,15 @@ input[type=text] {
     opacity: 0.5;
 }
 
+.r{
+    float: right;
+    color: #000;
+}
+
+.Dark .r{
+    color: #f4f4f4;
+}
+
 .comment{
     width: 500px;
     border-bottom: #808080 1px solid;

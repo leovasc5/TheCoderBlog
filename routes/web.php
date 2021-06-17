@@ -31,3 +31,4 @@ Route::get('editar-artigo', [BlogController::class, 'editArtigoTable'])->middlew
 Route::get('artigo/editar/{id}', [BlogController::class, 'editArtigoScreen'])->middleware('auth');
 Route::put('artigo/update/{id}', [BlogController::class, 'editArtigo'])->middleware('auth');
 
+Route::delete('artigo/editar/comentario/delete/{id_artigo}/{id}', [BlogController::class, 'deleteComentario'])->middleware('auth');
