@@ -14,9 +14,19 @@
 
     @foreach ($artigos as $artigo)
         <tr>
-            <td>{!! $artigo->conteudo !!}</td>
-            <td>Editar</td>
-            <td>Excluir</td>
+            <td class="table-column">
+                <div class="item">{!! $artigo->conteudo !!}</div>
+            </td>
+            <td class="table-column">
+                <div class="item" id="center">
+                    <a>Editar</a>
+                </div>
+            </td>
+            <td class="table-column">
+                <div class="item" id="center">
+                    <a>Excluir</a>
+                </div>
+            </td>
         </tr>
     @endforeach
     
