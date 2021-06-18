@@ -208,4 +208,12 @@ class BlogController extends Controller
             'comentarios' => $comentarios
         ]);
     }
+
+    public function editProjeto(Request $request, $id){
+        $now = now();
+        DB::table('projetos')->where('id', "$id")->update(['updated_at' => "$now"]);
+        DB::table('projetos')->where('id', "$id")->update(['conteudo' => "$request->conteudo"]);
+
+        return redirect("/projeto/$id");
+    }
 }
