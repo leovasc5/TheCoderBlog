@@ -231,4 +231,14 @@ class BlogController extends Controller
             'artigos' => $artigos
         ]);
     }
+
+    public function deleteVideo($id){
+        videos::findOrFail($id)->delete();
+
+        $videos = videos::all();
+
+        return view('editVideoTable', [
+            'videos' => $videos
+        ]);
+    }
 }
