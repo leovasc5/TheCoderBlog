@@ -198,4 +198,14 @@ class BlogController extends Controller
             'projetos' => $projetos
         ]);
     }
+
+    public function editProjetoScreen($id){
+        $projeto = projetos::findOrFail($id);
+        $comentarios = comentarios_projeto::all();
+
+        return view('editProjetoScreen', [
+            'projeto' => $projeto,
+            'comentarios' => $comentarios
+        ]);
+    }
 }

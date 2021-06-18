@@ -12,14 +12,14 @@
       <th>Excluir</th>
     </tr> 
 
-    @foreach ($projetos as $artigo)
+    @foreach ($projetos as $projeto)
         <tr>
             <td class="table-column">
-                <div class="item">{!! $artigo->conteudo !!}</div>
+                <div class="item">{!! $projeto->conteudo !!}</div>
             </td>
             <td class="table-column">
                 <div class="item" id="center">
-                    <a href="artigo/editar/{{$artigo->id}}">Editar</a>
+                    <a href="projeto/editar/{{$projeto->id}}">Editar</a>
                 </div>
             </td>
             <td class="table-column">
