@@ -216,4 +216,9 @@ class BlogController extends Controller
 
         return redirect("/projeto/$id");
     }
+
+    public function deleteComentarioProjeto($id_projeto, $id){
+        comentarios_projeto::findOrFail($id)->delete();
+        return redirect("projeto/$id_projeto");
+    }
 }
