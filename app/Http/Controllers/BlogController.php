@@ -190,4 +190,12 @@ class BlogController extends Controller
 
         return redirect("/videos");
     }
+
+    public function editProjetoTable(){
+        $projetos = projetos::all();
+
+        return view('editProjetoTable',[
+            'projetos' => $projetos
+        ]);
+    }
 }

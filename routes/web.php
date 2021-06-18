@@ -35,3 +35,5 @@ Route::delete('artigo/editar/comentario/delete/{id_artigo}/{id}', [BlogControlle
 Route::get('editar-video', [BlogController::class, 'editVideoTable'])->middleware('auth');
 Route::get('video/editar/{id}', [BlogController::class, 'editVideoScreen'])->middleware('auth');
 Route::put('video/update/{id}', [BlogController::class, 'editVideo'])->middleware('auth');
+
+Route::get('editar-projeto', [BlogController::class, 'editProjetoTable'])->middleware('auth');
