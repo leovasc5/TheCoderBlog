@@ -41,3 +41,4 @@ Route::get('projeto/editar/{id}', [BlogController::class, 'editProjetoScreen'])-
 Route::put('projeto/update/{id}', [BlogController::class, 'editProjeto'])->middleware('auth');
 Route::delete('projeto/editar/comentario/delete/{id_projeto}/{id}', [BlogController::class, 'deleteComentarioProjeto'])->middleware('auth');
 
+Route::delete('artigo/delete/{id}', [BlogController::class, 'deleteArtigo'])->middleware('auth');

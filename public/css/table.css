@@ -60,3 +60,7 @@ a:hover{
     opacity: 0.5;
     cursor: pointer;
 }
+
+.fr:hover{
+    opacity: 0.5;
+}

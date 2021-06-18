@@ -221,4 +221,14 @@ class BlogController extends Controller
         comentarios_projeto::findOrFail($id)->delete();
         return redirect("projeto/$id_projeto");
     }
+
+    public function deleteArtigo($id){
+        thecoderblog::findOrFail($id)->delete();
+        
+        $artigos = thecoderblog::all();
+
+        return view('editArtigoTable',[
+            'artigos' => $artigos
+        ]);
+    }
 }

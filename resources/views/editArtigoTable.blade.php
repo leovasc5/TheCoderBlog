@@ -24,11 +24,14 @@
             </td>
             <td class="table-column">
                 <div class="item" id="center">
-                    <a>Excluir</a>
+                    <form action="/artigo/delete/{{$artigo->id}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="fr">Excluir</button>
+                      </form>
                 </div>
             </td>
         </tr>
     @endforeach
-    
 </table>
 @endsection
