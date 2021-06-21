@@ -23,7 +23,16 @@
 
 <section class="posts">
 <h1 class="recentes">Posts Recentes</h1>
-@php 
+@foreach($artigos as $artigo)
+<a href="/artigo/{{$artigo->id}}">
+    <div class='box'>
+        <div class='text'>
+            {!! $artigo->conteudo !!}
+        </div>
+    </div>
+@endforeach
+
+{{-- @php 
 for($i = 0; $i <=2; $i++){
     echo "<a href='/artigo/".$artigos[$i]->id."'>";
         echo "<div class='box'>";
@@ -33,7 +42,7 @@ for($i = 0; $i <=2; $i++){
         echo "</div>";
     echo "</a>";
 }
-@endphp
+@endphp --}}
 <br><br><br>
 </div>
 </section>

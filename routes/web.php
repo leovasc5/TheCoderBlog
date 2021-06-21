@@ -43,3 +43,4 @@ Route::delete('projeto/editar/comentario/delete/{id_projeto}/{id}', [BlogControl
 
 Route::delete('artigo/delete/{id}', [BlogController::class, 'deleteArtigo'])->middleware('auth');
 Route::delete('video/delete/{id}', [BlogController::class, 'deleteVideo'])->middleware('auth');
+Route::delete('projeto/delete/{id}', [BlogController::class, 'deleteProjeto'])->middleware('auth');

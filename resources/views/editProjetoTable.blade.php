@@ -24,7 +24,11 @@
             </td>
             <td class="table-column">
                 <div class="item" id="center">
-                    <a>Excluir</a>
+                    <form action="/projeto/delete/{{$projeto->id}}" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="fr">Excluir</button>
+                      </form>
                 </div>
             </td>
         </tr>

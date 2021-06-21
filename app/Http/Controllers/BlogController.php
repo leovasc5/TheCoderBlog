@@ -241,4 +241,14 @@ class BlogController extends Controller
             'videos' => $videos
         ]);
     }
+
+    public function deleteProjeto($id){
+        projetos::findOrFail($id)->delete();
+
+        $projetos = projetos::all();
+
+        return view('editProjetoTable',[
+            'projetos' => $projetos
+        ]);
+    }
 }
