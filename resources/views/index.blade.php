@@ -31,18 +31,6 @@
         </div>
     </div>
 @endforeach
-
-{{-- @php 
-for($i = 0; $i <=2; $i++){
-    echo "<a href='/artigo/".$artigos[$i]->id."'>";
-        echo "<div class='box'>";
-            echo "<div class='text'>";
-                echo html_entity_decode($artigos[$i]->conteudo);
-            echo "</div>";
-        echo "</div>";
-    echo "</a>";
-}
-@endphp --}}
 <br><br><br>
 </div>
 </section>

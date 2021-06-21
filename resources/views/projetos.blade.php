@@ -11,20 +11,17 @@
 <center>
 <h1 class="recentes">Projetos</h1>
 </center>
-@php 
-for($i = 0; $i <=2; $i++){
-    echo "<a href='/projeto/".$projetos[$i]->id."'>";
-        echo "<div class='box'>";
-            echo "<div class='text'>";
-                echo html_entity_decode($projetos[$i]->conteudo);
-            echo "</div>";
-        echo "</div>";
-    echo "</a>";
-}
-@endphp
+
+@foreach($projetos as $projeto)
+<a href="/artigo/{{$projeto->id}}">
+    <div class='box'>
+        <div class='text'>
+            {!! $projeto->conteudo !!}
+        </div>
+    </div>
+@endforeach
 <br><br><br>
 </div>
 </section>
-
 
 @endsection
