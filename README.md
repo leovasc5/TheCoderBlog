@@ -1,6 +1,7 @@
 <h1 align="center">The Coder Blog</h1>
 <img src="https://ak.picdn.net/shutterstock/videos/1022906356/thumb/1.jpg?ip=x480" height="20" width="30" style="max-width:100%;" title="English">
 <p text-alingn="justify">Project created in PHP Laravel for the development of my personal blog. In this project, there are spaces for the publication of articles, videos and explanation of projects. It's my first step towards the dream of being an academic professor.</p>
+<br><br>
 <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Portugal_flag_300.png" height="20" width="30" style="max-width:100%;" title="Português">
 <p text-alingn="justify">Project created in PHP Laravel for the development of my personal blog. In this project, there are spaces for the publication of articles, videos and explanation of projects. It's my first step towards the dream of being an academic professor.</p>
 
